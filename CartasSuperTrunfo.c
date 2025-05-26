@@ -1,22 +1,49 @@
 #include <stdio.h>
-
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
-
-int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
+int main () {  
+ 
+    // variaveis
     
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+int populacao01,populacao02;
+float area01,area02;
+float pib01,pib02; 
+int numeroPontosTuristicos01,numeroPontosTuristicos02;
+ 
+    // lendo as informações da carta
 
-    return 0;
-}
+printf("Digite o número da População carta - 01: \n");
+scanf("%d" , &populacao01);
+
+printf("Digite o número da área carta - 01: \n");
+scanf("%f" , &area01 );
+
+printf("Digite o número do PIB carta - 01: \n");
+scanf("%f" , &pib01 ); 
+
+printf("Digite o número de pontos turíscos carta - 01: \n");
+scanf("%f" , &numeroPontosTuristicos01);
+
+
+printf("Digite o número da População carta - 02: \n");
+scanf("%d" , &populacao02);
+
+printf("Digite o número da área carta - 02: \n");
+scanf("%f" , &area02 );
+
+printf("Digite o número do PIB carta - 02: \n");
+scanf("%f" , &pib02 ); 
+
+printf("Digite o número de pontos turíscos carta - 02: \n");
+scanf("%f" , &numeroPontosTuristicos02);
+    
+    // mostrando informações recebidas pelos usuario
+
+printf ("Carta - 01 \n");
+printf ("Quantidade da população: %d - Número da área: %f \n", populacao01, area01);
+printf ("Números de PIB: %f - Números de pontos turísticos: %f \n" , pib01, numeroPontosTuristicos01);
+
+printf ("Carta - 02 \n");
+printf ("Quantidade da população: %d - Número da área: %f \n", populacao02, area02);
+printf ("Números de PIB: %f - Números de pontos turísticos: %f \n" , pib02, numeroPontosTuristicos02);
+
+return 0;
+} 
